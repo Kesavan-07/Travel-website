@@ -1,0 +1,538 @@
+:root {
+  --primary: #fa7436;
+  --secondary: #f7f8fc;
+  --light: #fefcfb;
+  --dark: #222222;
+  --text: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header.hero {
+  background: var(--light);
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+.trabook {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  color: var(--dark);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons button:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 5%;
+}
+.hero-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hero-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--dark);
+  font-family: Georgia, serif;
+}
+
+.hero-heading span {
+  color: var(--primary);
+}
+
+.hero-image {
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero-image img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  margin-top: 10px;
+  font-size: 21px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.discover-btn {
+  padding: 15px 22px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: medium;
+  margin-top: 20px;
+}
+
+.exp-btn {
+  padding: 12px 20px;
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.location-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.card-section {
+  text-align: left;
+}
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.services-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 45%;
+  margin: 0 auto 20px auto;
+}
+
+.services h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.services h2 span {
+  color: var(--primary);
+}
+.services p {
+  font-size: medium;
+  color: var(--text);
+  max-width: 600px;
+  max-width: 80%;
+}
+.element-1 {
+  display: flex;
+  max-width: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: var(--secondary);
+  margin-top: 20px;
+}
+.card1 {
+  background: var(--light);
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+.card1 img {
+  margin-bottom: 10px;
+}
+
+.card1 h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card1 p {
+  margin-top: 5px;
+  font-size: smaller;
+  color: var(--text);
+}
+
+.deals {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.deals h2 span {
+  color: var(--primary);
+}
+
+.deals h2 {
+  font-size: 35px;
+  margin-bottom: 18px;
+}
+.deals p {
+  font-size: smaller;
+  color: var(--text);
+}
+
+.deal-cards {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.deal-card {
+  background: var(--light);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.deal-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+
+.deal-card h3 {
+  color: var(--text);
+}
+
+.deal-card .price {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.deals img {
+  margin-top: 20px;
+}
+
+.vacation {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.vacation h2 span {
+  color: var(--primary);
+}
+
+.vacation h2 {
+  font-size: 40px;
+}
+.vacation p {
+  font-size: medium;
+  color: var(--text);
+}
+.vacation-cards {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.vacation-card {
+  background: var(--light);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.vacation-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+}
+
+.vacation-card h3 {
+  color: var(--text);
+}
+
+.vacation-card .price {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.peeps {
+  padding: 40px 20px;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.peeps-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 5%;
+}
+
+.text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.peeps h2 span {
+  color: var(--primary);
+}
+
+.peeps h2 {
+  font-size: 48px;
+  color: var(--dark);
+}
+.peeps p {
+  font-size: medium;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.peeps img {
+  max-width: 60%;
+  border-radius: 8px;
+}
+.blog-section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20%;
+  max-width: 1000px;
+}
+
+.blog-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--text);
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.blog-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: left;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-card h3 {
+  font-size: 16px;
+  margin: 15px 10px;
+  color: var(--dark);
+}
+
+.blog-card .date {
+  font-size: 14px;
+  color: #999;
+  margin: 0 10px 15px;
+}
+
+.subscribe-section {
+  background-color: #f05626;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.subscribe-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.subscribe-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-section input[type="email"] {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.subscribe-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #f05626;
+  font-weight: bold;
+}
+
+.footer {
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.footer .footer-content div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-icons a {
+  background-color: #f05626;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--text);
+}
+.background-design {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: none;
+}
